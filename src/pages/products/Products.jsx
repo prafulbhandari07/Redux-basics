@@ -54,9 +54,9 @@ export default function Products() {
               flexDirection: "column",
             }}
           >
-            <p>{product.title}</p>
-            <small>{product.description}</small>
-            <h5>{product.price}</h5>
+            <p>Product - {product.title}</p>
+            <small>Description - {product.description}</small>
+            <h5>Price - ${product.price}</h5>
             <br></br>
             {!addedToCart ? (
               <button onClick={() => handleAddToCart(product)}>
